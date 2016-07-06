@@ -1,0 +1,14 @@
+<template name="compList">
+  <div class="row">
+    <div class="col-md-3 col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading"><b>Konkurranser</b></div>
+        <ul class="list-group">
+          {{#each posts}}
+            <a href="{{url}}" class="list-group-item">{{title}}<span>{{domain}}</span></a>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
