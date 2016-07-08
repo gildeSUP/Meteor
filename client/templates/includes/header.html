@@ -1,0 +1,20 @@
+<template name="header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"><ul class="glyphicon glyphicon glyphicon-king"> Sjakkrating.no</ul></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="{{activeIfTemplateIs 'FrontPage'}}"><a href="{{ pathFor 'frontPage' }}">Konkurranser</a></li>
+          <li class="{{activeIfTemplateIs 'Gymnasts'}}"><a href="{{ pathFor 'Gymnasts'}}">Gymnaster</a></li>
+        </ul>
+        
+        <button type="button" id="btnRespNav" class="btn-navbar navbar-toggle slideout-menu-toggle pull-left" data-toggle="collapse" data-target="#login-navbar-collapse"></button>
+      </div>
+
+      {{> auto}}
+    </div>
+  </nav>
+</template>
