@@ -1,5 +1,5 @@
 Template.gymnasts.helpers({
-  gymnasts: function() {
+  gymnast: function() {
     return Gymnasts.find();
   }
 
