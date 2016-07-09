@@ -4,7 +4,6 @@ Template.compList.helpers({
   }
 
 });
-Meteor.subscribe('posts');
 
 
 
