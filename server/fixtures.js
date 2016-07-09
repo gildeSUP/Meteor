@@ -1,14 +1,14 @@
 if (Posts.find().count() === 0) {
 	Posts.insert({
-		title: 'Introducing telescope',
-		url: 'http://sachagreif.com/introducing-telescope/'
+		title: 'Marny og helens',
+		'venue': 'Trogstad'
 	});	
 	Posts.insert({
 		title: 'Meteor',
-		url: 'http://meteor.com'
+		venue: 'Trogstad'
 	});
 	Posts.insert({
 		title: 'The Meteor Book',
-		url: 'http://themeteorbook.com'
+		venue: 'Trogstad'
 	});
 }
