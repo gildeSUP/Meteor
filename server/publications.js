@@ -7,9 +7,11 @@ Meteor.publish('gymnasts', function() {
 });
 
 Meteor.publish('results', function(_id) {
-	return Results.find({competition_id: _id});
+	return Results.find({comp_id: _id});
 });
 
-Meteor.publish('scores', function() {
-	return Scores.find();
+Meteor.publish('scores', function(liste) {
+	return Scores.find({
+    'res_id': { $in: liste}
+	});
 });
